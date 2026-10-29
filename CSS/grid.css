@@ -294,3 +294,19 @@ gap: 2.5rem;
    color: #6d6a63;
    text-decoration: line-through;
 }
+
+@media (max-width: 860px) {
+  .bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
+  .bento-1 { grid-column: 1 / -1; grid-row: auto / span 2; }
+  .bento-2, .bento-3, .bento-4 { grid-column: auto; grid-row: auto; }
+  .bento-5 { grid-column: 1 / -1; grid-row: auto; }
+
+  .ambiente {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titulo"
+      "imagem"
+      "texto"
+      "numeros";
+  }
+}

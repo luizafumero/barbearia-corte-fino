@@ -264,8 +264,7 @@
 }
 
 .rodape-contato a:hover, 
-.rodape-links a: hover
-{
+.rodape-links a:hover {
    color: var(--ouro);
 }
 
